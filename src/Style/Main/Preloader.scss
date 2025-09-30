@@ -1,0 +1,55 @@
+@import "./Variables.scss";
+@import "./font.scss";
+
+.preloader-container {
+    position: fixed;
+    display: flex;
+    background: black;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease-out;
+    z-index: 1000;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.done {
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  position: relative;
+}
+.loader::after,
+.loader::before {
+  content: '';  
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: animloader 2s linear infinite;
+}
+.loader::after {
+  animation-delay: 1s;
+}
+
+@keyframes animloader {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(6);
+    opacity: 0;
+  }
+}

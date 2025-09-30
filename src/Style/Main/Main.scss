@@ -1,0 +1,47 @@
+@import "/src/Style/Main/font.scss";
+@import "/src/Style/Main/Variables.scss";
+
+body {
+    background-color: $Background;
+    display: flex;
+    justify-content: center;
+    padding: 64px 0px 64px 0px;
+}
+.block {
+    background-color: $Block;
+    border: map-get($map: $Content, $key: border);
+    border-radius: 32px;
+}
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: $Secondar-paragraph;
+}
+a {
+    text-decoration: none;
+    outline: none;
+    color: $Secondar-paragraph;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+main {
+    display: flex;
+}
+h1 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
