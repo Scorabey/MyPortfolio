@@ -5,7 +5,6 @@ body {
     background-color: $Background;
     display: flex;
     justify-content: center;
-    padding: 64px 0px 64px 0px;
 }
 .block {
     background-color: $Block;
@@ -40,7 +39,7 @@ li {
 main {
     display: flex;
 }
-h1 {
+h1, h2, h3, h4, h5, h6 {
     padding: 0;
     margin: 0;
     font-family: 'Inter', sans-serif;
