@@ -4,7 +4,6 @@
 @import "/src/Style/Main/Main.scss";
 
 .container {
-    margin-top: 10vw;
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -23,7 +22,7 @@
             border-radius: 100%;
         }
         h1 {
-            color: #1E1E1E;
+            color: $Title;
             font-family: 'Inter', sans-serif;
             font-weight: bold;
             padding: 0;

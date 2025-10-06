@@ -2,10 +2,8 @@
 @import "/src/Style/Main/font.scss";
 @import "/src/Style/Main/Variables.scss";
 @import "/src/Style/Main/Main.scss";
-@import "../Main/Preloader.scss";
 
 .container {
-    margin-top: 10vw;
     width: 70%;
     gap: 3.75vw;
     padding-bottom: 6.25vw;
@@ -30,7 +28,7 @@
             z-index: 4;
         }
         h1 {
-            color: #1E1E1E;
+            color: $Title;
             font-family: 'Inter', sans-serif;
             font-weight: bold;
             padding: 0;
