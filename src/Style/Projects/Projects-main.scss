@@ -79,13 +79,14 @@
             justify-content: center;
             align-items: center;
             gap: 1.88vh;
+            width: 67.5vh;
 
             article:nth-of-type(1) {
                 display: flex;
                 flex-direction: column;
                 padding: 2vh 1.88vh;
                 gap: 0.4vw;
-                width: 29.06vh;
+                width: 32.81vh;
                 background-color: $Block;
                 border-radius: 32px;
 
@@ -115,7 +116,7 @@
                 background-color: $Block;
                 border-radius: 32px;
                 gap: 2.66vw;
-                width: 29.06vh;
+                width: 32.81vh;
             }
         }
 
@@ -133,9 +134,13 @@
             }
             span {
                 color: #434343;
-                font-size: 20px;
+                font-size: 1.56vh;
                 font-family: 'Inter', sans-serif;
             }
         }
     }
+}
+.article-img {
+    width: 5.31vh;
+    height: 5.31vh;
 }

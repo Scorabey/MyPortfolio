@@ -1,5 +1,8 @@
+import { defineConfig } from 'vite';
+import autoprefixer from 'autoprefixer';
+import postcssPresetEnv from 'postcss-preset-env';
+import cssnano from 'cssnano';
 import { resolve } from 'path'
-import { defineConfig } from 'vite'
 
 export default defineConfig({
   build: {
@@ -11,5 +14,19 @@ export default defineConfig({
         portfolio: resolve(__dirname, './Projects.html'),
       }
     }
-  }
+  },
+  css: {
+    postcss: {
+      plugins: [
+        autoprefixer(),
+        postcssPresetEnv({
+          stage: 1,
+          features: {
+            'nesting-rules': true,
+          },
+        }),
+        ...(process.env.NODE_ENV === 'production' ? [cssnano()] : []),
+      ],
+    },
+  },
 })
